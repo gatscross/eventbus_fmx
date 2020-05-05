@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
-  FrameStand, Unit2;
+  FrameStand, UFrame1;
 
 type
   TForm1 = class(TForm)
@@ -14,10 +14,10 @@ type
     procedure FormShow(Sender: TObject);
   private
     { Private declarations }
-    FFrame1: TFrameInfo<TFrame2>;
+    FFrame1: TFrameInfo<TFrame1>;
   protected
-    function GetUnit2: TFrameInfo<TFrame2>;
-    property aFrame: TFrameInfo<TFrame2> read GetUnit2;
+    function GetFrame1: TFrameInfo<TFrame1>;
+    property aFrame: TFrameInfo<TFrame1> read GetFrame1;
   public
     { Public declarations }
   end;
@@ -36,10 +36,10 @@ begin
   aFrame.Show();
 end;
 
-function TForm1.GetUnit2: TFrameInfo<TFrame2>;
+function TForm1.GetFrame1: TFrameInfo<TFrame1>;
 begin
   if not Assigned(FFrame1) then
-    FFrame1 := FrameStand1.New<TFrame2>(Layout1);
+    FFrame1 := FrameStand1.New<TFrame1>(Layout1);
   Result := FFrame1;
 end;
 

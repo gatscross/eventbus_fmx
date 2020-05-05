@@ -4,8 +4,8 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   Unit1 in 'Unit1.pas' {Form1},
-  Unit2 in 'Unit2.pas' {Frame2: TFrame},
-  Unit3 in 'Unit3.pas' {Frame3: TFrame},
+  UFrame1 in 'UFrame1.pas' {Frame1: TFrame},
+  UFrame2 in 'UFrame2.pas' {Frame2: TFrame},
   MainFrU in 'MainFrU.pas';
 
 {$R *.res}

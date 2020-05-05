@@ -1,0 +1,38 @@
+object Frame1: TFrame1
+  Align = Client
+  Size.Width = 320.000000000000000000
+  Size.Height = 482.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 398.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Align = Bottom
+    Position.Y = 448.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Show Frame 2'
+    OnClick = Button1Click
+  end
+  object Text1: TText
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'This Frame 1'
+  end
+  object FrameStand1: TFrameStand
+    AnimationShow = 'OnShow*'
+    AnimationHide = 'OnHide*'
+    CommonActionPrefix = 'ca_'
+    DefaultStyleName = 'framestand'
+    Left = 136
+    Top = 224
+  end
+end
